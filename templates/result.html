@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection Results</title>
+</head>
+<body>
+    <h1>News Classification Results</h1>
+
+    <h2>Model Predictions</h2>
+    {% for model, preds in predictions.items() %}
+    <h3>{{ model }}</h3>
+    <ul>
+        {% for pred in preds %}
+        <li>{{ pred }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</body>
+</html>

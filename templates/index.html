@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+</head>
+<body>
+    <h1>Upload News Articles</h1>
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <label for="true_file">Upload True News File (True.csv):</label>
+        <input type="file" name="true_file" required><br><br>
+        <label for="fake_file">Upload Fake News File (False.csv):</label>
+        <input type="file" name="fake_file" required><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
